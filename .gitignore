@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+*.sqlite
+*.sqlite-*
+*.db
+*.p12
+*.p8
+*.mobileprovision
+*.cer
+*.key
+*.pem
+secrets/

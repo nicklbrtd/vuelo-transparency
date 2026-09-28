@@ -1,0 +1,22 @@
+name: Documentation correction (English)
+description: Report a factual error, unclear explanation, or broken documentation link.
+title: "[Docs] "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include vulnerability details, private URLs, credentials, or personal data. Use private vulnerability reporting for security issues."
+  - type: input
+    id: page
+    attributes:
+      label: Page or section
+      placeholder: docs/en/privacy-overview.md
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should be corrected?
+      description: Share a documentation correction or a question about wording.
+    validations:
+      required: true

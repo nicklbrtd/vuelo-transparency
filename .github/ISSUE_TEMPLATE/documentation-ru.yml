@@ -1,0 +1,22 @@
+name: Исправление документации (русский)
+description: Сообщить о фактической ошибке, неясном объяснении или неработающей ссылке.
+title: "[Docs] "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: "Не включайте сведения об уязвимости, приватные URL, учётные данные или персональную информацию. Для проблем безопасности используйте приватную передачу отчётов."
+  - type: input
+    id: page
+    attributes:
+      label: Страница или раздел
+      placeholder: docs/ru/privacy-overview.md
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Что нужно исправить?
+      description: Опишите ошибку в документации или неясную формулировку.
+    validations:
+      required: true
